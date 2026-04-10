@@ -35,14 +35,8 @@ Main R packages:
 ```r
 pacman::p_load(
   tidyverse, archetypes, ggplot2, ggtern,
-  hopkins, sf, spdep, spatialreg, glmmTMB
+  sf, spdep, spatialreg, glmmTMB
 )
-```
-
-Additional dependency:
-
-```r
-install.packages("geometry")
 ```
 
 ---
@@ -58,7 +52,7 @@ git clone https://github.com/your-username/your-repo.git
 
 3. Run the main script:
 ```r
-source("R/main_analysis.R")
+source("analysis_Europeanpoliticalsystem.R")
 ```
 
 ---
@@ -147,19 +141,10 @@ Key outputs include:
 set.seed(123)
 ```
 
-- Record session information:
-```r
-sessionInfo()
-```
-
-- (Optional) Use `renv` for dependency management:
-```r
-install.packages("renv")
-renv::init()
-```
-
 ---
 
 ## 📬 Contact
 
-Daniel Fernández  
+- Daniel Fernández (daniel.fernandez.martinez@upc.edu)
+- Marica Manisera (marica.manisera@unibs.it)
+- Paola Zuccolotto (paola.zuccolotto@unibs.it)
