@@ -147,10 +147,8 @@ ggplot(dfscreeplot, aes(x = k, y = RSS)) +
   )
 
 dev.off()
-
-
-#For paper 2
-pdf(file="./Results/elbow_paper2.pdf",width=12,height=8,paper="special")
+  
+pdf(file="./Results/elbow.pdf",width=12,height=8,paper="special")
 
 # screeplot(lass10) 
 # abline(v = 3, lty = 2, col = "red", lwd = 2)
@@ -591,12 +589,12 @@ dev.off()
 
 
 
-paper1 <- FALSE 
+paper <- FALSE 
 
 pdf(file = "./Results/Ternary_countries_seatperc.pdf", width = 8, height = 8)
 
 for (i in 1:(length(countries))) {
-  if (paper1){
+  if (paper){
       if (i %in% c(4, 13, 17)) {
        next  # skip this iteration
       }
