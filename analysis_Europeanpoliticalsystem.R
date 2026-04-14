@@ -591,9 +591,7 @@ dev.off()
 
 
 
-paper1 <- FALSE #If paper1 is TRUE means do for paper 1, if FALSE is for paper 2
-#paper1=TRUE:  We do all countries now except those three: Spain, Hungary and Sweden
-#paper1=FALSE: We do all countries
+paper1 <- FALSE 
 
 pdf(file = "./Results/Ternary_countries_seatperc.pdf", width = 8, height = 8)
 
