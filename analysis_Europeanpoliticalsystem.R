@@ -629,7 +629,13 @@ for (i in 1:(length(countries))) {
           plot.title = element_text(hjust = 0.5)) +
     geom_point(aes(size = seatperc), alpha = 0.8, color = "black", fill = "darkgoldenrod1", shape = 21) +
     #geom_text(aes(label = party), size = 3, color = "black", hjust = 1.2) +
-    geom_text(aes(label = party), size = 3, color = "black", vjust = -1) +
+    #geom_text(aes(label = party), size = 3, color = "black", vjust = -1) +
+    geom_text(
+      aes(label = party),
+      size = 3,
+      color = "black",
+      position = position_nudge_tern(x = 0.02, y = 0.02, z = -0.02)
+    )+
     scale_size_area(breaks = c(5, 10, 20, 40, 60, 80,100), limits = c(0, 100), max_size = 12, name = "% Seats") +
     #labs(x = as.vector(whoADAare$family[1]), 
     #     y = as.vector(whoADAare$family[3]), 
